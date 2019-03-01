@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule ^urun/([0-9]+)$ product.php?productID=$1 [NC]
+RewriteRule ^urunler/([0-9]+)/([0-9]+)$ products.php?pageNum=$1&count=$2
+RewriteRule ^([a-zA-Z0-9-_]+)$ index.php?page=$1
